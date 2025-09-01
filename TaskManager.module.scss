@@ -1,0 +1,250 @@
+$color-primary: #007bff;
+$color-danger: #dc3545;
+$color-border: #ccc;
+$color-background-light: #f8f9fa;
+
+$status-pending: #ffc107;
+$status-in-progress: #0dcaf0;
+$status-completed: #28a745;
+
+
+.header {
+  background-color: #590202; 
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  border-bottom: 5px solid #ffda0a;
+}
+
+.container {
+  min-height: calc(100vh - 72px);
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  background: #d9cccc;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.leftPane {
+    background-color: #590202;
+    padding: 25px;
+    border-radius: 28px;
+    max-width: 450px;
+    width: 100%;
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    min-height: 360px;
+    height: auto;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+  margin-top: 5px;
+}
+
+.inputGroup label {
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    font-family: system-ui;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #444;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #000;           
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0,123,255,0.4);
+}
+
+.inputGroup textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff990a;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #b26903;
+}
+
+
+.rightPane {
+  display: flex;
+  flex-direction: column;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 2px solid #590202;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #000; 
+  background: #fff;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color:#da3036; 
+}
+
+.select {
+  padding: 10px 14px;
+  border: 2px solid #590202;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #000;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #da3036;
+}
+
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.taskCard {
+  background: #fff;
+  padding: 16px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 7px solid #590202;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: Arial, sans-serif;
+}
+
+.taskCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #590202;
+}
+.taskCard p {
+  color: #000; 
+  font-size: 14px; 
+  line-height: 1.4; 
+}
+.taskCard h3,
+.taskCard p {
+  font-family: 'Arial', sans-serif; 
+}
+.status {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background: #ffeeba;
+  color: #856404;
+}
+.status.in-progress {
+  background: #bee5eb;
+  color: #0c5460;
+}
+.status.completed {
+  background: #c3e6cb;
+  color: #155724;
+}
+
+.taskActions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+.startButton {
+  background-color: pink;
+  color: black;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.startButton:hover {
+  background-color: hotpink;
+  color: white;
+}
+
+.endButton {
+  background-color: skyblue;
+  color: black;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.endButton:hover {
+  background-color: deepskyblue;
+  color: white;
+}
+
+.deleteButton {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background-color: darkred;
+}
